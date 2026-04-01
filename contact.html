@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <section class="sub-header">
+      <nav> 
+        <a href="index.html"><img src="images/logo.png" alt="University Logo"></a> 
+        <div class="nav-links" id="navlinks">
+        <i class="fa-solid fa-xmark" id="cross" onclick="hideMenu()"></i>
+            <ul>
+             <li><a href="index.html">Home</a></li>  
+              <li><a href="about.html">About</a></li> 
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="blog.html">Blog</a></li> 
+              <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="bars" onclick="showMenu()"></i>
+
+      </nav>
+    <h1>Contact Us</h1>
+    </section>
+
+    <!--contact us section  -->
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13280.301052704119!2d73.14737515!3d33.681115299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1774774502995!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house" id="home-icon"></i>
+                    <span>
+                        <h5>123 University Avenue</h5>
+                        <p>City, Country</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone" id="phone-icon"></i>
+                    <span>
+                        <h5>+1 234 567 890</h5>
+                        <p>Monday to Saturday , 10:00 AM - 6:00 PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope" id="envelop-icon"></i>
+                    <span>
+                        <h5>info@university.edu</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject"  placeholder="Enter your Subject" required>
+                    <textarea name="message" row="8" placeholder="Enter your Message" required></textarea> 
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+  
+ <!-- Footer section -->
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>Our universities are dedicated to providing excellent education and research opportunities. 
+<br> We strive to create an environment where students can thrive academically and personally.</p>
+<div class="icons">
+    <i class="fa-brands fa-facebook" id="icon"></i>
+    <i class="fa-brands fa-twitter" id="icon"></i>
+    <i class="fa-brands fa-instagram" id="icon"></i>
+    <i class="fa-brands fa-linkedin" id="icon"></i>
+</div>
+<p> Made with <i class="fa-solid fa-heart" id="heart-icon"></i> by yousra zaheer inspired by easy tutorial(Greatstack)</p>
+</section>
+
+<!-- javascript for menu toogling -->
+    <script>
+     var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html> 

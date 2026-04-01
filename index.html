@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <section class="header">
+      <nav> 
+        <a href="index.html"><img src="images/logo.png" alt="University Logo"></a> 
+        <div class="nav-links" id="navlinks">
+        <i class="fa-solid fa-xmark" id="cross" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>  
+              <li><a href="about.html">About</a></li> 
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="blog.html">Blog</a></li> 
+              <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="bars" onclick="showMenu()"></i>
+
+      </nav>
+      <div class="text-box">
+       <h1>Discover Universities in Pakistan</h1>
+       <p>Highly ranked Universities all around pakistan , with top-notch facilities and academic excellence.</p>
+       <a href="contact.html" class="hero-btn">Visit Us To know More</a>
+    </div>
+    </section>
+
+<!--Courses section -->
+    <section class="Course">
+        <h1>Courses We Offer</h1>
+        <p>Explore our diverse range of undergraduate and graduate programs.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>ADP</h3>
+                <p>Some universities offering ADP programs include University of Central Punjab (UCP), University of Management and Technology (UMT), TUF, Bahauddin Zakariya University, and Preston University. These programs typically require a minimum of 35-45% marks in intermediate or equivalent, and have a duration of 4 semesters.</p>
+            </div>
+             <div class="course-col">
+                <h3>Undergraduate</h3>
+                <p>Universities in Pakistan offer various 4-year undergraduate degree programs across multiple disciplines. These programs provide students with in-depth knowledge and skills, preparing them for careers or further studies. 4-year degrees are available in fields like BS Computer Science, BS Business Administration, BS Engineering, BS Psychology, and BS International Relations.</p>
+            </div>
+             <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>Our post graduate programs offer advanced knowledge and research opportunities in various fields, preparing students for leadership roles and further academic pursuits.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- campus section -->
+<section class="Campus">
+        <h1>University campuses in Pakistan</h1>
+        <p>Experience a vibrant campus life with state-of-the-art facilities and a diverse community.</p>
+         <div class="Campus-row">
+            
+            <div class="Campus-col">
+            <img src="images\nustuni.jpg" alt="Nust">
+                <div class="layer">
+                    <h3>NUST</h3>
+                </div>
+            </div>
+
+             <div class="Campus-col">
+            <img id="gcu" src="images\gcuLahore.jpg" alt="GCU LAHORE">
+                <div class="layer">
+                    <h3>GCU LAHORE</h3>
+                </div>
+            </div>
+
+             <div class="Campus-col">
+            <img src="images\islamiaclg.jpg" alt="ISLAMIA">
+                <div class="layer">
+                    <h3>ISLAMIA</h3>
+                </div>
+            </div>
+         </div>
+    </section>
+
+<!-- facilities section-->
+ <section class="facilities">
+       <h1>Our Facilities</h1>
+       <p>universities offers a great experience through modren libraries , sports areas and cafetareias .</p>
+       <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.jpg" alt="Library">
+            <h3>World Class Library</h3>
+            <p>Our library is a treasure trove of knowledge,
+                 offering an extensive collection of books, 
+                 journals, and digital resources to support
+                          your academic journey.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="images/basketball.webp" alt="Basketball">
+            <h3>Basketball Court</h3>
+            <p>Our state-of-the-art basketball court provides
+                 a perfect environment for sports enthusiasts 
+                 to train and compete.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="images/cslab.jpg" alt="Computer Lab">
+            <h3>Computer Lab</h3>
+            <p>Our modern computer lab provides state-of-the-art facilities for students to enhance their technical skills and knowledge.</p>
+        </div>
+    </div>
+ </section>
+
+ <!-- Testimonials section-->
+ <section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>Hear from our students about their experiences at our universities.</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/pfplogo.jpg" alt="user 1">
+            <div>
+                <p>"NUST university has provided me with incredible opportunities for growth and learning. The faculty is supportive, and the campus is vibrant."</p>
+                <h3>Sarah</h3>
+                <div id="star-color">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/pfplogo.jpg" alt="user 2">
+            <div>
+                <p>"FAST is a great university with excellent facilities and knowledgeable faculty."</p>
+                <h3>Ali</h3>
+                <div id="star-color">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+ </section>
+
+<!-- call to action -->
+ <section class="cta">
+    <h1>Ready to Join Us?</h1>
+    <a href="contact.html" class="hero-btn" >Contact Us </a>
+ </section>
+
+ <!-- Footer section -->
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>Our universities are dedicated to providing excellent education and research opportunities. 
+<br> We strive to create an environment where students can thrive academically and personally.</p>
+<div class="icons">
+    <i class="fa-brands fa-facebook" id="icon"></i>
+    <i class="fa-brands fa-twitter" id="icon"></i>
+    <i class="fa-brands fa-instagram" id="icon"></i>
+    <i class="fa-brands fa-linkedin" id="icon"></i>
+</div>
+<p> Made with <i class="fa-solid fa-heart" id="heart-icon"></i> by yousra zaheer inspired by easy tutorial(Greatstack)</p>
+</section>
+
+<!-- javascript for menu toogling -->
+    <script>
+     var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html> 
